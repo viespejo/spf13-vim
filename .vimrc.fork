@@ -1,0 +1,18 @@
+set guifont=Monaco\ for\ Powerline\ 10
+set nobackup
+set noswapfile
+set nospell
+set nocursorline
+" Default clipboard value
+    set clipboard=""
+" Easy windows
+    map <C-J> <C-W>j
+    map <C-K> <C-W>k
+    map <C-L> <C-W>l
+    map <C-H> <C-W>h
+    map <Leader>_ <C-w>_
+" Tags
+    set tags+=./.tags;/
+" tunning performance
+    set lazyredraw
+    set ttyfast

@@ -1,0 +1,5 @@
+"let g:spf13_use_powerline=1
+let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'javascript', 'html', 'misc']
+"NeoBundle 'viespejo/phpfolding.vim'
+NeoBundle 'viespejo/myconfig.vim'
+NeoBundle 'joonty/vdebug.git'

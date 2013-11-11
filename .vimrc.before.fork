@@ -1,0 +1,47 @@
+" Disable Menubar and Toolbar
+    set go-=m
+    set go-=T
+" Disable solarized underline
+    let g:solarized_underline     = 0
+" Disable views
+    let g:spf13_no_views          = 1
+" Enable powerline symbols
+    let g:airline_powerline_fonts = 1
+" No easy Windows
+    let g:spf13_no_easyWindows = 1
+" To disable views add the following to your .vimrc.before.local file:
+    let g:spf13_no_views = 1
+" PHP syntax options
+    let php_folding         = 2
+    let php_sync_method     = 0
+    let php_sql_query       = 0
+    let php_htmlInString = 0
+" Syntastic
+    let g:syntastic_javascript_checker="jshint"
+    let g:syntastic_javascript_jshint_conf = " --extra-ext .json,.pjs"
+    let g:syntastic_javascript_gjslint_conf = " --additional_extensions json,pjs"
+    let g:syntastic_javascript_jslint_conf = " --additional_extensions .json,.pjs"
+" Error bells are displayed visually.
+    set visualbell
+" VDebug
+    let g:vdebug_options= {
+                \"port" : 9000,
+                \"server" : '172.19.115.171',
+                \"timeout" : 30,
+                \"on_close" : 'detach',
+                \"break_on_open" : 0,
+                \"ide_key" : 'XDEBUG_VIESPEJO',
+                \"debug_window_level" : 0,
+                \"debug_file_level" : 0,
+                \"path_maps" : {"/www/" : "/mnt/tresse05/www/"},
+                \"debug_file" : "/tmp/vdebug.log",
+                \"watch_window_style" : 'expanded',
+                \"marker_default" : '⬦',
+                \"marker_closed_tree" : '▸',
+                \"marker_open_tree" : '▾'
+                \}
+    let g:vdebug_options.server = 'localhost'
+    let g:vdebug_options.path_maps = {'/www/' : '/www/'}
+    let g:vdebug_features= {
+                \"max_data" : 4096
+                \}
