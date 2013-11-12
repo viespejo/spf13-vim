@@ -1,5 +1,7 @@
 "let g:spf13_use_powerline=1
+" To override all the included bundles, put
+" let g:override_spf13_bundles = 1
 let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'javascript', 'html', 'misc']
-"NeoBundle 'viespejo/phpfolding.vim'
+"let g:spf13_bundle_groups=['general']
 NeoBundle 'viespejo/myconfig.vim'
 NeoBundle 'joonty/vdebug.git'

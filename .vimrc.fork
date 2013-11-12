@@ -3,6 +3,9 @@ set nobackup
 set noswapfile
 set nospell
 set nocursorline
+set noshowmatch
+" Remove highlight color from current line number
+"    highlight clear CursorLineNr
 " Default clipboard value
     set clipboard=""
 " Easy windows

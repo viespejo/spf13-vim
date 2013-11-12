@@ -11,11 +11,11 @@
     let g:spf13_no_easyWindows = 1
 " To disable views add the following to your .vimrc.before.local file:
     let g:spf13_no_views = 1
+" To disable: Restore cursor to file position in previous editing session
+    let g:spf13_no_restore_cursor = 1
 " PHP syntax options
-    let php_folding         = 2
+    let php_folding         = 0
     let php_sync_method     = 0
-    let php_sql_query       = 0
-    let php_htmlInString = 0
 " Syntastic
     let g:syntastic_javascript_checker="jshint"
     let g:syntastic_javascript_jshint_conf = " --extra-ext .json,.pjs"
@@ -24,6 +24,7 @@
 " Error bells are displayed visually.
     set visualbell
 " VDebug
+" Change bellow configuration to adapt it your necessaries in ~/.vimrc.before.local
     let g:vdebug_options= {
                 \"port" : 9000,
                 \"server" : '172.19.115.171',
