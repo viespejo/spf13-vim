@@ -19,3 +19,10 @@ set noshowmatch
 " tunning performance
     set lazyredraw
     set ttyfast
+" Unmappings
+    iunmap <expr><C-y>
+" JSON-plugin
+let g:vim_json_syntax_conceal = 0
+" Unbundle auto-close
+    UnBundle 'spf13/vim-autoclose'
+
