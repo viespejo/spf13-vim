@@ -3,8 +3,6 @@
     set go-=T
 " Disable solarized underline
     let g:solarized_underline = 0
-" Disable views
-    let g:spf13_no_views          = 1
 " Enable powerline symbols
     let g:airline_powerline_fonts = 1
 " No easy Windows
@@ -55,6 +53,7 @@
     \    "eval_visual" : "<Leader>E",
     \}
     let g:vdebug_options.server = 'localhost'
+    "let g:vdebug_options.server = '172.19.115.171'
     let g:vdebug_options.path_maps = {'/www/' : '/www/'}
     let g:vdebug_features= {
                 \"max_data" : 4096
