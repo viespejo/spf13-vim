@@ -21,6 +21,10 @@ set noshowmatch
     set ttyfast
 " Unmappings
     iunmap <expr><C-y>
+    unmap [F
+    iunmap [F
+    unmap [H
+    iunmap [H
 " JSON-plugin
 let g:vim_json_syntax_conceal = 0
 " Neocomplete
@@ -32,6 +36,9 @@ let g:vim_json_syntax_conceal = 0
     UnBundle 'spf13/vim-autoclose'
 " Add snippets directories
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/bundle/myconfig.vim/snippets'
+let g:neosnippet#disable_runtime_snippets = {
+        \   '_' : 1,
+        \ }
 " TagBar for PHP
 let g:tagbar_type_php = {
     \ 'kinds' : [
