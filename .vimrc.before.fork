@@ -58,3 +58,5 @@
     let g:vdebug_features= {
                 \"max_data" : 4096
                 \}
+
+let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'javascript', 'html', 'misc']

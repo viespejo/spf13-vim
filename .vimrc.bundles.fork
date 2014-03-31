@@ -1,8 +1,9 @@
-"let g:spf13_use_powerline=1
-" To override all the included bundles, put
-" let g:override_spf13_bundles = 1
-let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'javascript', 'html', 'misc']
-"let g:spf13_bundle_groups=['general']
 NeoBundle 'viespejo/myconfig.vim'
 NeoBundle 'joonty/vdebug.git'
 "NeoBundle 'Raimondi/delimitMate'
+" Snippets & AutoComplete
+    if count(g:spf13_bundle_groups, 'youcompleteme')
+        Bundle 'Valloric/YouCompleteMe'
+        Bundle 'SirVer/ultisnips'
+        Bundle 'honza/vim-snippets'
+    endif
