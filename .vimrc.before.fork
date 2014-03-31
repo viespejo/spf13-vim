@@ -16,9 +16,9 @@
     let php_sync_method     = 0
 " Syntastic
     let g:syntastic_javascript_checkers=["jshint"]
-    let g:syntastic_javascript_jshint_conf = " --extra-ext .json,.pjs"
-    let g:syntastic_javascript_gjslint_conf = " --additional_extensions json,pjs"
-    let g:syntastic_javascript_jslint_conf = " --additional_extensions .json,.pjs"
+    let g:syntastic_javascript_jshint_args = " --extra-ext .json,.pjs"
+    let g:syntastic_javascript_gjslint_args = " --additional_extensions json,pjs"
+    let g:syntastic_javascript_jslint_args = " --additional_extensions .json,.pjs"
 " Error bells are displayed visually.
     set visualbell
 " VDebug
