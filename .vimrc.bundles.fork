@@ -3,7 +3,7 @@ NeoBundle 'joonty/vdebug.git'
 "NeoBundle 'Raimondi/delimitMate'
 " Snippets & AutoComplete
     if count(g:spf13_bundle_groups, 'youcompleteme')
-        Bundle 'Valloric/YouCompleteMe'
-        Bundle 'SirVer/ultisnips'
-        Bundle 'honza/vim-snippets'
+        NeoBundle 'Valloric/YouCompleteMe'
+        NeoBundle 'SirVer/ultisnips'
+        NeoBundle 'honza/vim-snippets'
     endif
