@@ -66,6 +66,9 @@ let g:tagbar_type_php = {
         " enable completion from tags
         let g:ycm_collect_identifiers_from_tags_files = 1
 
+        "key mapping
+        inoremap <expr><CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
         " remap Ultisnips for compatibility for YCM
         let g:UltiSnipsExpandTrigger = '<C-j>'
         let g:UltiSnipsJumpForwardTrigger = '<C-j>'
