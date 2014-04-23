@@ -29,6 +29,9 @@ set noshowmatch
     iunmap [F
     unmap [H
     iunmap [H
+
+    unmap <
+    unmap >
 " JSON-plugin
 let g:vim_json_syntax_conceal = 0
 " Neocomplete
