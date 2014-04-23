@@ -103,6 +103,8 @@ let g:tagbar_type_php = {
         set completeopt-=preview
     endif
 " }
+" CTRL P
+let g:ctrlp_by_filename = 1
 " Silver searcher ag (ack.vim)
 if executable('ag')
     let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
