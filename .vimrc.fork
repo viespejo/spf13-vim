@@ -41,11 +41,15 @@ let g:vim_json_syntax_conceal = 0
 
 " Unbundle auto-close
     UnBundle 'spf13/vim-autoclose'
-" Add snippets directories
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/bundle/myconfig.vim/snippets'
-let g:neosnippet#disable_runtime_snippets = {
-        \   '_' : 1,
-        \ }
+" Neocomplete {
+    if count(g:spf13_bundle_groups, 'neocomplete')
+        " Add snippets directories
+        let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/bundle/myconfig.vim/snippets'
+        let g:neosnippet#disable_runtime_snippets = {
+                \   '_' : 1,
+                \ }
+    endif
+" }
 " TagBar for PHP
 let g:tagbar_type_php = {
     \ 'kinds' : [
