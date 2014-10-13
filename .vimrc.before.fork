@@ -60,3 +60,10 @@
                 \}
 
 let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'javascript', 'misc']
+
+" Turn off gitgutter by default
+" let g:gitgutter_enabled = 0
+
+" Solve lag in gitgutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
