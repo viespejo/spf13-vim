@@ -109,3 +109,10 @@ let g:ctrlp_by_filename = 1
 if executable('ag')
     let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
 endif
+
+if has('gui_running')
+    if has('gui_macvim')
+        set transparency=0
+    endif
+endif
+
