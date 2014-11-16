@@ -53,7 +53,8 @@
             set runtimepath+=~/.vim/bundle/neobundle.vim/
         endif
 
-        call neobundle#rc(expand('~/.vim/bundle/'))
+        call neobundle#begin(expand('~/.vim/bundle/'))
+        NeoBundleFetch 'Shougo/neobundle.vim'
 
         command! -nargs=? -bang -bar
               \ -complete=customlist,neobundle#complete_bundles
@@ -75,7 +76,7 @@
 " Bundles {
 
     " Deps
-        NeoBundleFetch 'Shougo/neobundle.vim'
+        "NeoBundleFetch 'Shougo/neobundle.vim'
         Bundle 'MarcWeber/vim-addon-mw-utils'
         Bundle 'tomtom/tlib_vim'
         if executable('ack-grep')
@@ -262,3 +263,4 @@
     set shortmess+=filmnrxoOtT      " Abbrev. of messages (avoids 'hit enter')
 " }
 
+call neobundle#end()

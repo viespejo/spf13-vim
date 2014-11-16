@@ -45,7 +45,9 @@
             set runtimepath+=~/.vim/bundle/neobundle.vim/
         endif
 
-        call neobundle#rc(expand('~/.vim/bundle/'))
+        call neobundle#begin(expand('~/.vim/bundle/'))
+        NeoBundleFetch 'Shougo/neobundle.vim'
+        call neobundle#end()
 
         command! -nargs=? -bang -bar
               \ -complete=customlist,neobundle#complete_bundles
