@@ -1,4 +1,5 @@
-set guifont=Monaco\ for\ Powerline\ 10
+"set guifont=Monaco\ for\ Powerline\ 10
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 10.400390625
 set nobackup
 set noswapfile
 set nospell
@@ -115,4 +116,3 @@ if has('gui_running')
         set transparency=0
     endif
 endif
-
